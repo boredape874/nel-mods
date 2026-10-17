@@ -1,0 +1,50 @@
+# Keeps catalog.json in step with the published Releases: publishing, editing or deleting a release updates the
+# list NEL client shows under Mods → 찾아보기. The script checks every .nelmod (size, GitHub sha256 digest, package
+# manifest) and never replaces a version that is already listed with a different file.
+name: Update catalog
+
+on:
+  release:
+    types: [published, edited, deleted, unpublished, prereleased, released]
+  workflow_dispatch:
+  schedule:
+    - cron: "23 3 * * *" # daily safety net for assets uploaded after a release was published
+
+permissions:
+  contents: write
+
+concurrency:
+  group: catalog
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - id: build
+        name: Rebuild catalog.json from releases
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CATALOG_ATTEMPTS: "3"
+        run: python3 scripts/update_catalog.py
+
+      - name: Commit catalog.json
+        run: |
+          if git diff --quiet -- catalog.json; then
+            echo "catalog.json 변경 없음"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add catalog.json
+          git commit -m "Update catalog from releases"
+          git push
+
+      - name: Report skipped assets
+        if: steps.build.outcome == 'failure'
+        run: |
+          echo "일부 Release 파일을 카탈로그에 넣지 않았습니다. 위 'Rebuild catalog.json' 단계의 '건너뜀' 줄을 확인하세요."
+          exit 1

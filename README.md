@@ -12,7 +12,8 @@ NEL client → Mods → 찾아보기에서 모드를 고르고 **설치**를 누
 
 | 경로 | 내용 |
 |---|---|
-| `catalog.json` | 모드 목록과 각 버전의 Release 태그·파일 이름·크기·SHA-256 (형식: NEL 모드 배포 규격 catalog schema 1) |
+| `catalog.json` | 모드 목록과 각 버전의 Release 태그·파일 이름·크기·SHA-256 (형식: NEL 모드 배포 규격 catalog schema 1). Release를 게시·수정·삭제하면 GitHub Actions가 자동으로 갱신합니다 |
+| `scripts/update_catalog.py`, `.github/workflows/update-catalog.yml` | 카탈로그 자동 갱신: 각 `.nelmod`의 크기·GitHub digest·패키지 manifest를 검사한 뒤 목록에 넣습니다 |
 | `licenses/` | 모드별 사용 조건과 제3자 고지 |
 | `icons/` | 목록 아이콘 |
 | Releases | 모드별 태그(`<모드>-v<버전>`)와 `.nelmod` 파일 |
