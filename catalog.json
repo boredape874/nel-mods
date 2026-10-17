@@ -3,7 +3,7 @@
   "schemaVersion": 1,
   "name": "NEL 공식 모드",
   "repository": "boredape874/nel-mods",
-  "updatedAt": "2026-10-17T15:22:54Z",
+  "updatedAt": "2026-10-17T15:42:38Z",
   "mods": [
     {
       "id": "nel.optimization",
@@ -30,7 +30,7 @@
           "coreAbi": 1,
           "dependencies": [],
           "conflicts": [],
-          "publishedAt": "2026-10-17T15:22:54Z",
+          "publishedAt": "2026-10-17T15:29:41Z",
           "notes": "첫 배포: Windows 성능 3개 옵션(CPU 스로틀링 끄기, GPU 우선순위 높이기, 프로세스 우선순위 높이기)."
         }
       ]
