@@ -3,6 +3,37 @@
   "schemaVersion": 1,
   "name": "NEL 공식 모드",
   "repository": "boredape874/nel-mods",
-  "updatedAt": "2026-10-17T00:00:00Z",
-  "mods": []
+  "updatedAt": "2026-10-17T15:22:54Z",
+  "mods": [
+    {
+      "id": "nel.optimization",
+      "name": "최적화",
+      "description": "Windows 성능: 게임 프로세스의 전원 스로틀링(EcoQoS)을 끄고 GPU 예약 우선순위와 CPU 우선순위를 높입니다. 게임 시작 시 한 번 적용하고 게임을 정상 종료할 때 원래 값으로 되돌립니다. 높은 우선순위는 녹화·방송 프로그램 같은 다른 프로그램의 몫을 줄일 수 있습니다.",
+      "authors": [
+        "NEL client contributors"
+      ],
+      "category": "performance",
+      "license": "LicenseRef-NEL-Proprietary",
+      "terms": "licenses/nel.optimization.md",
+      "repository": "boredape874/nel-mods",
+      "releases": [
+        {
+          "version": "0.1.0",
+          "channel": "stable",
+          "tag": "optimization-v0.1.0",
+          "asset": "nel-optimization-0.1.0.nelmod",
+          "size": 131388,
+          "sha256": "af44ac39497d3ed744aa8a7c66d458b14c2b81613ea72c55201dec065899cd48",
+          "gameVersions": [
+            "1.26.52"
+          ],
+          "coreAbi": 1,
+          "dependencies": [],
+          "conflicts": [],
+          "publishedAt": "2026-10-17T15:22:54Z",
+          "notes": "첫 배포: Windows 성능 3개 옵션(CPU 스로틀링 끄기, GPU 우선순위 높이기, 프로세스 우선순위 높이기)."
+        }
+      ]
+    }
+  ]
 }
