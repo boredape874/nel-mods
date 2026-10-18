@@ -3,7 +3,7 @@
   "schemaVersion": 1,
   "name": "NEL 공식 모드",
   "repository": "boredape874/nel-mods",
-  "updatedAt": "2026-10-18T12:53:18Z",
+  "updatedAt": "2026-10-18T14:36:03Z",
   "mods": [
     {
       "id": "nel.optimization",
@@ -95,6 +95,22 @@
           "conflicts": [],
           "publishedAt": "2026-10-18T12:53:18Z",
           "notes": "이동 속도 컬링 추가(기본 꺼짐, 최대·울트라 단계 포함): 엘리트라·질주처럼 빠르게 움직이는 동안 먼 엔티티·플레이어를 그리는 거리를 줄이고 느려지면 되돌립니다. 렌더 거리나 서버 요청은 바꾸지 않습니다."
+        },
+        {
+          "version": "0.8.1",
+          "channel": "stable",
+          "tag": "optimization-v0.8.1",
+          "asset": "nel-optimization-0.8.1.nelmod",
+          "size": 246902,
+          "sha256": "48596b164e8f4c4c0e2e01d8fae802fc8637bfb1b51f92d3e5e0e1f84577701b",
+          "gameVersions": [
+            "1.26.52"
+          ],
+          "coreAbi": 1,
+          "dependencies": [],
+          "conflicts": [],
+          "publishedAt": "2026-10-18T14:36:03Z",
+          "notes": "0.8.1: NEL 인게임 메뉴에서 설정을 바꾸면 바로 적용(최적화 단계 포함, 일부 항목은 다음 시작부터). 엔티티 컬링이 실제 게임에서 꺼지던 문제 수정, 구름·그림자 처리 상태 기록, 적응형 품질이 백그라운드 FPS 제한 프레임을 평균에 넣던 문제 수정."
         }
       ]
     }
