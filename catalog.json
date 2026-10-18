@@ -3,7 +3,7 @@
   "schemaVersion": 1,
   "name": "NEL 공식 모드",
   "repository": "boredape874/nel-mods",
-  "updatedAt": "2026-10-17T20:20:13Z",
+  "updatedAt": "2026-10-18T08:11:21Z",
   "mods": [
     {
       "id": "nel.optimization",
@@ -17,6 +17,22 @@
       "terms": "licenses/nel.optimization.md",
       "repository": "boredape874/nel-mods",
       "releases": [
+        {
+          "version": "0.6.0",
+          "channel": "stable",
+          "tag": "optimization-v0.6.0",
+          "asset": "nel-optimization-0.6.0.nelmod",
+          "size": 215977,
+          "sha256": "8fded47a557cc772f8fd2ef25d3f793a4fd35aa0ec6b482b09f13b9bb54c132a",
+          "gameVersions": [
+            "1.26.52"
+          ],
+          "coreAbi": 1,
+          "dependencies": [],
+          "conflicts": [],
+          "publishedAt": "2026-10-17T20:20:28Z",
+          "notes": "0.4.0~0.6.0 추가(모두 기본 꺼짐): 하늘·날씨·구름·그림자·이름표 끄기, 먼 엔티티 그리지 않기(종류별 거리), 엔티티 FPS·이름표 FPS 제한, 화면 밖 엔티티 그리지 않기, 먼 블록 엔티티 숨기기, 적응형 품질(목표 FPS에 맞춰 컬링 거리 자동 조절)."
+        },
         {
           "version": "0.3.0",
           "channel": "stable",
@@ -47,22 +63,6 @@
           "conflicts": [],
           "publishedAt": "2026-10-17T15:29:41Z",
           "notes": "첫 배포: Windows 성능 3개 옵션(CPU 스로틀링 끄기, GPU 우선순위 높이기, 프로세스 우선순위 높이기)."
-        },
-        {
-          "version": "0.6.0",
-          "channel": "stable",
-          "tag": "optimization-v0.6.0",
-          "asset": "nel-optimization-0.6.0.nelmod",
-          "size": 215977,
-          "sha256": "8fded47a557cc772f8fd2ef25d3f793a4fd35aa0ec6b482b09f13b9bb54c132a",
-          "gameVersions": [
-            "1.26.52"
-          ],
-          "coreAbi": 1,
-          "dependencies": [],
-          "conflicts": [],
-          "publishedAt": "2026-10-17T20:20:13Z",
-          "notes": "0.4.0~0.6.0 추가(모두 기본 꺼짐): 하늘·날씨·구름·그림자·이름표 끄기, 먼 엔티티 그리지 않기(종류별 거리), 엔티티 FPS·이름표 FPS 제한, 화면 밖 엔티티 그리지 않기, 먼 블록 엔티티 숨기기, 적응형 품질(목표 FPS에 맞춰 컬링 거리 자동 조절)."
         }
       ]
     }
