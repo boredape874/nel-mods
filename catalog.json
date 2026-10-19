@@ -3,8 +3,218 @@
   "schemaVersion": 1,
   "name": "NEL 공식 모드",
   "repository": "boredape874/nel-mods",
-  "updatedAt": "2026-10-19T03:33:14Z",
+  "updatedAt": "2026-10-19T09:08:25Z",
   "mods": [
+    {
+      "id": "nel.camera",
+      "name": "카메라",
+      "description": "카메라 세트: 자유 시점(서버 규칙 확인), 시네마틱 카메라, 뒤 보기, 엘리트라 기울기, 3인칭 내 이름표. 기능마다 켜기/끄기와 세부 설정이 있고 게임 중 NEL 메뉴에서 바꾸면 바로 적용됩니다. 이 PC에서 카메라가 보여 주는 것만 바꾸고 서버로 무엇을 보내지 않습니다(자유 시점 동안 몸 방향은 시작할 때 그대로). 게임 함수는 이 게임 빌드(1.26.52)의 코드 바이트가 정확히 맞을 때만 쓰고 아니면 그 기능을 건너뜁니다. 자이로(Gyro)는 아직 넣지 않았습니다.",
+      "authors": [
+        "NEL client contributors"
+      ],
+      "category": "utility",
+      "license": "LicenseRef-NEL-Proprietary",
+      "terms": "licenses/nel.camera.md",
+      "repository": "boredape874/nel-mods",
+      "releases": [
+        {
+          "version": "0.1.0",
+          "channel": "stable",
+          "tag": "camera-v0.1.0",
+          "asset": "nel-camera-0.1.0.nelmod",
+          "size": 190483,
+          "sha256": "02b436fd278b99811f239c30c54ed4d5f8d4d8d303faa4f069448323443f442b",
+          "gameVersions": [
+            "1.26.52"
+          ],
+          "coreAbi": 1,
+          "dependencies": [],
+          "conflicts": [],
+          "publishedAt": "2026-10-19T03:33:31Z",
+          "notes": "카메라 0.1.0 첫 배포. 기능별 켜기/끄기와 세부 조정을 지원합니다."
+        }
+      ]
+    },
+    {
+      "id": "nel.combat-hud",
+      "name": "전투 표시",
+      "description": "전투 표시 세트: 리치, 콤보, 활 충전, 처치 알림, 피해 숫자, 맞힘 표시, 맞은 색, 체력 경고, 처치 알림 소리. 기능마다 켜기/끄기와 세부 설정이 있고 게임 중 NEL 메뉴에서 바꾸면 바로 적용됩니다. 게임에서 읽은 값을 보여 주기만 하고 서버로 무엇을 보내지 않습니다(맞은 색은 이 PC의 화면 색만 바꿈). 처치 알림은 최근에 때린 대상이 쓰러졌다는 뜻이며 내 처치를 확정하지 않습니다. 게임 함수는 이 게임 빌드(1.26.52)의 코드 바이트가 정확히 맞을 때만 쓰고 아니면 그 기능을 건너뜁니다.",
+      "authors": [
+        "NEL client contributors"
+      ],
+      "category": "hud",
+      "license": "LicenseRef-NEL-Proprietary",
+      "terms": "licenses/nel.combat-hud.md",
+      "repository": "boredape874/nel-mods",
+      "releases": [
+        {
+          "version": "0.1.0",
+          "channel": "stable",
+          "tag": "combat-hud-v0.1.0",
+          "asset": "nel-combat-hud-0.1.0.nelmod",
+          "size": 1531888,
+          "sha256": "73f3298c0864238734e3d9165e2d0f5dd908c50040b7a4e0f41ca311e27076b6",
+          "gameVersions": [
+            "1.26.52"
+          ],
+          "coreAbi": 1,
+          "dependencies": [],
+          "conflicts": [],
+          "publishedAt": "2026-10-19T03:33:34Z",
+          "notes": "전투 표시 0.1.0 첫 배포. 기능별 켜기/끄기와 세부 조정을 지원합니다."
+        }
+      ]
+    },
+    {
+      "id": "nel.essentials",
+      "name": "기본 HUD",
+      "description": "다른 클라이언트에 기본으로 있는 기능 묶음입니다. 정보 HUD: FPS, CPS, 핑, 시계, 좌표, 방향, 속도, 프레임 시간, 서버 주소, 디버그 정보. 장비 HUD: 갑옷·손에 든 아이템 내구도, 아이템 개수, 키 입력 표시. 편의(0.2.0): 줌(서버 규칙 확인), 달리기·웅크리기 토글, 밝기 최대, GUI 배율, NEL 채팅 창, 탭 목록. 화면 배치(0.2.0): 보스바·게임 좌표 표시·종이인형·점수판을 옮기거나 숨깁니다. 요소와 기능마다 켜기/끄기와 세부 설정이 있고 게임 중 NEL 메뉴에서 바꾸면 바로 적용됩니다(GUI 배율은 창 크기를 바꿀 때). 서버로 무엇을 보내지 않습니다. 게임 함수는 이 게임 빌드(1.26.52)의 코드 바이트가 정확히 맞을 때만 쓰고 아니면 그 기능을 건너뜁니다. 편의 기능은 이 PC에서 게임이 보여 주는 것(시야·밝기·GUI 크기·HUD 채팅 위치)과 키 입력(토글)만 바꿉니다. CPS는 게임 창이 앞에 있을 때 마우스 버튼 누름만 셉니다.",
+      "authors": [
+        "NEL client contributors"
+      ],
+      "category": "hud",
+      "license": "LicenseRef-NEL-Proprietary",
+      "terms": "licenses/nel.essentials.md",
+      "repository": "boredape874/nel-mods",
+      "releases": [
+        {
+          "version": "0.2.0",
+          "channel": "stable",
+          "tag": "essentials-v0.2.0",
+          "asset": "nel-essentials-0.2.0.nelmod",
+          "size": 1594606,
+          "sha256": "4d16a7949b9f6eccfc1dc50deb22af3fdf163afcb33ab78a811931c24e03ba5a",
+          "gameVersions": [
+            "1.26.52"
+          ],
+          "coreAbi": 1,
+          "dependencies": [],
+          "conflicts": [],
+          "publishedAt": "2026-10-19T03:33:28Z",
+          "notes": "기본 HUD 0.2.0 첫 배포. 기능별 켜기/끄기와 세부 조정을 지원합니다."
+        }
+      ]
+    },
+    {
+      "id": "nel.fun",
+      "name": "재미",
+      "description": "재미 세트: 게임 위에서 하는 블록 퍼즐(NEL 자체 구현). 단축키로 열고 닫습니다. 서버로 무엇을 보내지 않습니다. 화면 메시 뒤집기(FlipMesh)는 넣지 않았습니다. 게임 함수는 이 게임 빌드(1.26.52)의 코드 바이트가 정확히 맞을 때만 쓰고 아니면 그 기능을 건너뜁니다.",
+      "authors": [
+        "NEL client contributors"
+      ],
+      "category": "utility",
+      "license": "LicenseRef-NEL-Proprietary",
+      "terms": "licenses/nel.fun.md",
+      "repository": "boredape874/nel-mods",
+      "releases": [
+        {
+          "version": "0.1.0",
+          "channel": "stable",
+          "tag": "fun-v0.1.0",
+          "asset": "nel-fun-0.1.0.nelmod",
+          "size": 1502877,
+          "sha256": "e2845939c982dd76717355d2ffd756a774f841443d731c07101266a68f21f938",
+          "gameVersions": [
+            "1.26.52"
+          ],
+          "coreAbi": 1,
+          "dependencies": [],
+          "conflicts": [],
+          "publishedAt": "2026-10-19T03:33:52Z",
+          "notes": "재미 0.1.0 첫 배포. 기능별 켜기/끄기와 세부 조정을 지원합니다."
+        }
+      ]
+    },
+    {
+      "id": "nel.integrations",
+      "name": "외부 연동",
+      "description": "외부 연동 세트: Discord 상태 표시(이 PC의 Discord 앱, 직접 만든 애플리케이션 ID)와 이 PC에서만 보이는 닉네임. 기능마다 켜기/끄기와 세부 설정이 있고 게임 중 NEL 메뉴에서 바꾸면 바로 적용됩니다. 게임 서버로 무엇을 보내지 않습니다. 게임 함수는 이 게임 빌드(1.26.52)의 코드 바이트가 정확히 맞을 때만 쓰고 아니면 그 기능을 건너뜁니다.",
+      "authors": [
+        "NEL client contributors"
+      ],
+      "category": "utility",
+      "license": "LicenseRef-NEL-Proprietary",
+      "terms": "licenses/nel.integrations.md",
+      "repository": "boredape874/nel-mods",
+      "releases": [
+        {
+          "version": "0.1.0",
+          "channel": "stable",
+          "tag": "integrations-v0.1.0",
+          "asset": "nel-integrations-0.1.0.nelmod",
+          "size": 214861,
+          "sha256": "8e52a42480a073ac28abe4d8c0f32b9fb4b885a49897f6311e3cc492932e2081",
+          "gameVersions": [
+            "1.26.52"
+          ],
+          "coreAbi": 1,
+          "dependencies": [],
+          "conflicts": [],
+          "publishedAt": "2026-10-19T03:33:50Z",
+          "notes": "외부 연동 0.1.0 첫 배포. 기능별 켜기/끄기와 세부 조정을 지원합니다."
+        }
+      ]
+    },
+    {
+      "id": "nel.items",
+      "name": "아이템",
+      "description": "아이템 세트: 상자·인벤토리에서 아이템을 옮길 때 날아가는 아이템 그림(애니메이션)을 그리지 않습니다. 아이템이 옮겨지는 것은 그대로이고 그림만 생략합니다. 게임 중 NEL 메뉴에서 바꾸면 바로 적용됩니다. 서버로 무엇을 보내지 않습니다. Java식 버리기(JavaDrop)는 아직 넣지 않았습니다. 게임 함수는 이 게임 빌드(1.26.52)의 코드 바이트가 정확히 맞을 때만 쓰고 아니면 그 기능을 건너뜁니다.",
+      "authors": [
+        "NEL client contributors"
+      ],
+      "category": "utility",
+      "license": "LicenseRef-NEL-Proprietary",
+      "terms": "licenses/nel.items.md",
+      "repository": "boredape874/nel-mods",
+      "releases": [
+        {
+          "version": "0.1.0",
+          "channel": "stable",
+          "tag": "items-v0.1.0",
+          "asset": "nel-items-0.1.0.nelmod",
+          "size": 148754,
+          "sha256": "edd719d2c444309bf333901baa3f2efcae469cebe53dbd1da482780d3a94d260",
+          "gameVersions": [
+            "1.26.52"
+          ],
+          "coreAbi": 1,
+          "dependencies": [],
+          "conflicts": [],
+          "publishedAt": "2026-10-19T03:33:46Z",
+          "notes": "아이템 0.1.0 첫 배포. 기능별 켜기/끄기와 세부 조정을 지원합니다."
+        }
+      ]
+    },
+    {
+      "id": "nel.map",
+      "name": "지도·이동",
+      "description": "지도·이동 세트: 미니맵(방향·청크 격자·웨이포인트·좌표, 지형은 아직 없음)과 웨이포인트(설정 목록, 단축키로 추가하는 임시 지점, 사망 지점). 기능마다 켜기/끄기와 세부 설정이 있고 게임 중 NEL 메뉴에서 바꾸면 바로 적용됩니다. 게임에서 읽기만 하고 서버로 무엇을 보내지 않습니다. 좌표를 보여 주므로 서버 규칙 확인. 게임 함수는 이 게임 빌드(1.26.52)의 코드 바이트가 정확히 맞을 때만 쓰고 아니면 그 기능을 건너뜁니다.",
+      "authors": [
+        "NEL client contributors"
+      ],
+      "category": "hud",
+      "license": "LicenseRef-NEL-Proprietary",
+      "terms": "licenses/nel.map.md",
+      "repository": "boredape874/nel-mods",
+      "releases": [
+        {
+          "version": "0.1.0",
+          "channel": "stable",
+          "tag": "map-v0.1.0",
+          "asset": "nel-map-0.1.0.nelmod",
+          "size": 1539930,
+          "sha256": "b717f3397fc272d5386e564ce90eb5d8f4342effbd47fa65850f41d3cce85149",
+          "gameVersions": [
+            "1.26.52"
+          ],
+          "coreAbi": 1,
+          "dependencies": [],
+          "conflicts": [],
+          "publishedAt": "2026-10-19T03:33:43Z",
+          "notes": "지도·이동 0.1.0 첫 배포. 기능별 켜기/끄기와 세부 조정을 지원합니다."
+        }
+      ]
+    },
     {
       "id": "nel.optimization",
       "name": "최적화",
@@ -17,6 +227,70 @@
       "terms": "licenses/nel.optimization.md",
       "repository": "boredape874/nel-mods",
       "releases": [
+        {
+          "version": "0.8.2",
+          "channel": "stable",
+          "tag": "optimization-v0.8.2",
+          "asset": "nel-optimization-0.8.2.nelmod",
+          "size": 248011,
+          "sha256": "9696878268a30b1b1843d798411aac3f36394433848ef2b3fc0a36615df50c14",
+          "gameVersions": [
+            "1.26.52"
+          ],
+          "coreAbi": 1,
+          "dependencies": [],
+          "conflicts": [],
+          "publishedAt": "2026-10-18T15:15:46Z",
+          "notes": "0.8.2: 최적화 단계 표 추가. 단계 표를 지원하는 NEL 런처에서는 단계를 고르면 해당 기능 스위치와 숫자 값이 실제로 바뀌고, 개별 값을 직접 바꾸면 '사용자 지정'으로 돌아갑니다. 이전 런처에서는 0.8.1과 같게 동작합니다."
+        },
+        {
+          "version": "0.8.1",
+          "channel": "stable",
+          "tag": "optimization-v0.8.1",
+          "asset": "nel-optimization-0.8.1.nelmod",
+          "size": 246902,
+          "sha256": "48596b164e8f4c4c0e2e01d8fae802fc8637bfb1b51f92d3e5e0e1f84577701b",
+          "gameVersions": [
+            "1.26.52"
+          ],
+          "coreAbi": 1,
+          "dependencies": [],
+          "conflicts": [],
+          "publishedAt": "2026-10-18T14:36:14Z",
+          "notes": "0.8.1: NEL 인게임 메뉴에서 설정을 바꾸면 바로 적용(최적화 단계 포함, 일부 항목은 다음 시작부터). 엔티티 컬링이 실제 게임에서 꺼지던 문제 수정, 구름·그림자 처리 상태 기록, 적응형 품질이 백그라운드 FPS 제한 프레임을 평균에 넣던 문제 수정."
+        },
+        {
+          "version": "0.8.0",
+          "channel": "stable",
+          "tag": "optimization-v0.8.0",
+          "asset": "nel-optimization-0.8.0.nelmod",
+          "size": 232883,
+          "sha256": "758a2eb9bbd0bc419f1b8d52314e4c13fcab7eb22c4c6e41bd2bfd65ad6b820e",
+          "gameVersions": [
+            "1.26.52"
+          ],
+          "coreAbi": 1,
+          "dependencies": [],
+          "conflicts": [],
+          "publishedAt": "2026-10-18T12:53:37Z",
+          "notes": "이동 속도 컬링 추가(기본 꺼짐, 최대·울트라 단계 포함): 엘리트라·질주처럼 빠르게 움직이는 동안 먼 엔티티·플레이어를 그리는 거리를 줄이고 느려지면 되돌립니다. 렌더 거리나 서버 요청은 바꾸지 않습니다."
+        },
+        {
+          "version": "0.7.0",
+          "channel": "stable",
+          "tag": "optimization-v0.7.0",
+          "asset": "nel-optimization-0.7.0.nelmod",
+          "size": 229624,
+          "sha256": "4291bcfa4aae56b4a7cc23f9a0a319bfd5e357e7a5e09150ced724555d325c87",
+          "gameVersions": [
+            "1.26.52"
+          ],
+          "coreAbi": 1,
+          "dependencies": [],
+          "conflicts": [],
+          "publishedAt": "2026-10-18T12:44:02Z",
+          "notes": "최적화 단계 추가: custom(기본)·balanced·performance·max·ultra. 단계를 고르면 해당 기능을 한 번에 켜고, 직접 켠 기능과 더 강하게 정한 값은 그대로 유지합니다."
+        },
         {
           "version": "0.6.0",
           "channel": "stable",
@@ -63,190 +337,6 @@
           "conflicts": [],
           "publishedAt": "2026-10-17T15:29:41Z",
           "notes": "첫 배포: Windows 성능 3개 옵션(CPU 스로틀링 끄기, GPU 우선순위 높이기, 프로세스 우선순위 높이기)."
-        },
-        {
-          "version": "0.7.0",
-          "channel": "stable",
-          "tag": "optimization-v0.7.0",
-          "asset": "nel-optimization-0.7.0.nelmod",
-          "size": 229624,
-          "sha256": "4291bcfa4aae56b4a7cc23f9a0a319bfd5e357e7a5e09150ced724555d325c87",
-          "gameVersions": [
-            "1.26.52"
-          ],
-          "coreAbi": 1,
-          "dependencies": [],
-          "conflicts": [],
-          "publishedAt": "2026-10-18T12:43:50Z",
-          "notes": "최적화 단계 추가: custom(기본)·balanced·performance·max·ultra. 단계를 고르면 해당 기능을 한 번에 켜고, 직접 켠 기능과 더 강하게 정한 값은 그대로 유지합니다."
-        },
-        {
-          "version": "0.8.0",
-          "channel": "stable",
-          "tag": "optimization-v0.8.0",
-          "asset": "nel-optimization-0.8.0.nelmod",
-          "size": 232883,
-          "sha256": "758a2eb9bbd0bc419f1b8d52314e4c13fcab7eb22c4c6e41bd2bfd65ad6b820e",
-          "gameVersions": [
-            "1.26.52"
-          ],
-          "coreAbi": 1,
-          "dependencies": [],
-          "conflicts": [],
-          "publishedAt": "2026-10-18T12:53:18Z",
-          "notes": "이동 속도 컬링 추가(기본 꺼짐, 최대·울트라 단계 포함): 엘리트라·질주처럼 빠르게 움직이는 동안 먼 엔티티·플레이어를 그리는 거리를 줄이고 느려지면 되돌립니다. 렌더 거리나 서버 요청은 바꾸지 않습니다."
-        },
-        {
-          "version": "0.8.1",
-          "channel": "stable",
-          "tag": "optimization-v0.8.1",
-          "asset": "nel-optimization-0.8.1.nelmod",
-          "size": 246902,
-          "sha256": "48596b164e8f4c4c0e2e01d8fae802fc8637bfb1b51f92d3e5e0e1f84577701b",
-          "gameVersions": [
-            "1.26.52"
-          ],
-          "coreAbi": 1,
-          "dependencies": [],
-          "conflicts": [],
-          "publishedAt": "2026-10-18T14:36:03Z",
-          "notes": "0.8.1: NEL 인게임 메뉴에서 설정을 바꾸면 바로 적용(최적화 단계 포함, 일부 항목은 다음 시작부터). 엔티티 컬링이 실제 게임에서 꺼지던 문제 수정, 구름·그림자 처리 상태 기록, 적응형 품질이 백그라운드 FPS 제한 프레임을 평균에 넣던 문제 수정."
-        },
-        {
-          "version": "0.8.2",
-          "channel": "stable",
-          "tag": "optimization-v0.8.2",
-          "asset": "nel-optimization-0.8.2.nelmod",
-          "size": 248011,
-          "sha256": "9696878268a30b1b1843d798411aac3f36394433848ef2b3fc0a36615df50c14",
-          "gameVersions": [
-            "1.26.52"
-          ],
-          "coreAbi": 1,
-          "dependencies": [],
-          "conflicts": [],
-          "publishedAt": "2026-10-18T15:15:34Z",
-          "notes": "0.8.2: 최적화 단계 표 추가. 단계 표를 지원하는 NEL 런처에서는 단계를 고르면 해당 기능 스위치와 숫자 값이 실제로 바뀌고, 개별 값을 직접 바꾸면 '사용자 지정'으로 돌아갑니다. 이전 런처에서는 0.8.1과 같게 동작합니다."
-        }
-      ]
-    },
-    {
-      "id": "nel.essentials",
-      "name": "기본 HUD",
-      "description": "다른 클라이언트에 기본으로 있는 기능 묶음입니다. 정보 HUD: FPS, CPS, 핑, 시계, 좌표, 방향, 속도, 프레임 시간, 서버 주소, 디버그 정보. 장비 HUD: 갑옷·손에 든 아이템 내구도, 아이템 개수, 키 입력 표시. 편의(0.2.0): 줌(서버 규칙 확인), 달리기·웅크리기 토글, 밝기 최대, GUI 배율, NEL 채팅 창, 탭 목록. 화면 배치(0.2.0): 보스바·게임 좌표 표시·종이인형·점수판을 옮기거나 숨깁니다. 요소와 기능마다 켜기/끄기와 세부 설정이 있고 게임 중 NEL 메뉴에서 바꾸면 바로 적용됩니다(GUI 배율은 창 크기를 바꿀 때). 서버로 무엇을 보내지 않습니다. 게임 함수는 이 게임 빌드(1.26.52)의 코드 바이트가 정확히 맞을 때만 쓰고 아니면 그 기능을 건너뜁니다. 편의 기능은 이 PC에서 게임이 보여 주는 것(시야·밝기·GUI 크기·HUD 채팅 위치)과 키 입력(토글)만 바꿉니다. CPS는 게임 창이 앞에 있을 때 마우스 버튼 누름만 셉니다.",
-      "authors": [
-        "NEL client contributors"
-      ],
-      "category": "hud",
-      "license": "LicenseRef-NEL-Proprietary",
-      "terms": "licenses/nel.essentials.md",
-      "repository": "boredape874/nel-mods",
-      "releases": [
-        {
-          "version": "0.2.0",
-          "channel": "stable",
-          "tag": "essentials-v0.2.0",
-          "asset": "nel-essentials-0.2.0.nelmod",
-          "size": 1594606,
-          "sha256": "4d16a7949b9f6eccfc1dc50deb22af3fdf163afcb33ab78a811931c24e03ba5a",
-          "gameVersions": [
-            "1.26.52"
-          ],
-          "coreAbi": 1,
-          "dependencies": [],
-          "conflicts": [],
-          "publishedAt": "2026-10-19T03:33:11Z",
-          "notes": "기본 HUD 0.2.0 첫 배포. 기능별 켜기/끄기와 세부 조정을 지원합니다."
-        }
-      ]
-    },
-    {
-      "id": "nel.camera",
-      "name": "카메라",
-      "description": "카메라 세트: 자유 시점(서버 규칙 확인), 시네마틱 카메라, 뒤 보기, 엘리트라 기울기, 3인칭 내 이름표. 기능마다 켜기/끄기와 세부 설정이 있고 게임 중 NEL 메뉴에서 바꾸면 바로 적용됩니다. 이 PC에서 카메라가 보여 주는 것만 바꾸고 서버로 무엇을 보내지 않습니다(자유 시점 동안 몸 방향은 시작할 때 그대로). 게임 함수는 이 게임 빌드(1.26.52)의 코드 바이트가 정확히 맞을 때만 쓰고 아니면 그 기능을 건너뜁니다. 자이로(Gyro)는 아직 넣지 않았습니다.",
-      "authors": [
-        "NEL client contributors"
-      ],
-      "category": "utility",
-      "license": "LicenseRef-NEL-Proprietary",
-      "terms": "licenses/nel.camera.md",
-      "repository": "boredape874/nel-mods",
-      "releases": [
-        {
-          "version": "0.1.0",
-          "channel": "stable",
-          "tag": "camera-v0.1.0",
-          "asset": "nel-camera-0.1.0.nelmod",
-          "size": 190483,
-          "sha256": "02b436fd278b99811f239c30c54ed4d5f8d4d8d303faa4f069448323443f442b",
-          "gameVersions": [
-            "1.26.52"
-          ],
-          "coreAbi": 1,
-          "dependencies": [],
-          "conflicts": [],
-          "publishedAt": "2026-10-19T03:33:11Z",
-          "notes": "카메라 0.1.0 첫 배포. 기능별 켜기/끄기와 세부 조정을 지원합니다."
-        }
-      ]
-    },
-    {
-      "id": "nel.combat-hud",
-      "name": "전투 표시",
-      "description": "전투 표시 세트: 리치, 콤보, 활 충전, 처치 알림, 피해 숫자, 맞힘 표시, 맞은 색, 체력 경고, 처치 알림 소리. 기능마다 켜기/끄기와 세부 설정이 있고 게임 중 NEL 메뉴에서 바꾸면 바로 적용됩니다. 게임에서 읽은 값을 보여 주기만 하고 서버로 무엇을 보내지 않습니다(맞은 색은 이 PC의 화면 색만 바꿈). 처치 알림은 최근에 때린 대상이 쓰러졌다는 뜻이며 내 처치를 확정하지 않습니다. 게임 함수는 이 게임 빌드(1.26.52)의 코드 바이트가 정확히 맞을 때만 쓰고 아니면 그 기능을 건너뜁니다.",
-      "authors": [
-        "NEL client contributors"
-      ],
-      "category": "hud",
-      "license": "LicenseRef-NEL-Proprietary",
-      "terms": "licenses/nel.combat-hud.md",
-      "repository": "boredape874/nel-mods",
-      "releases": [
-        {
-          "version": "0.1.0",
-          "channel": "stable",
-          "tag": "combat-hud-v0.1.0",
-          "asset": "nel-combat-hud-0.1.0.nelmod",
-          "size": 1531888,
-          "sha256": "73f3298c0864238734e3d9165e2d0f5dd908c50040b7a4e0f41ca311e27076b6",
-          "gameVersions": [
-            "1.26.52"
-          ],
-          "coreAbi": 1,
-          "dependencies": [],
-          "conflicts": [],
-          "publishedAt": "2026-10-19T03:33:12Z",
-          "notes": "전투 표시 0.1.0 첫 배포. 기능별 켜기/끄기와 세부 조정을 지원합니다."
-        }
-      ]
-    },
-    {
-      "id": "nel.visuals",
-      "name": "시각 효과",
-      "description": "시각 효과 세트: 모션 블러, 시간 고정, 안개 색, 날씨 숨기기, 블록 외곽선 색, 부수기 진행도, 청크 경계, 히트박스, 바라보는 대상 정보. 기능마다 켜기/끄기와 세부 설정이 있고 게임 중 NEL 메뉴에서 바꾸면 바로 적용됩니다. 이 PC의 화면에 그리는 것만 바꾸고 서버로 무엇을 보내지 않습니다. 히트박스와 바라보는 대상은 서버 규칙 확인. 게임 함수는 이 게임 빌드(1.26.52)의 코드 바이트가 정확히 맞을 때만 쓰고 아니면 그 기능을 건너뜁니다. 동적 조명과 불 화면 끄기는 아직 넣지 않았습니다.",
-      "authors": [
-        "NEL client contributors"
-      ],
-      "category": "utility",
-      "license": "LicenseRef-NEL-Proprietary",
-      "terms": "licenses/nel.visuals.md",
-      "repository": "boredape874/nel-mods",
-      "releases": [
-        {
-          "version": "0.1.0",
-          "channel": "stable",
-          "tag": "visuals-v0.1.0",
-          "asset": "nel-visuals-0.1.0.nelmod",
-          "size": 1548933,
-          "sha256": "72044f008a3168dea8ca05b4d08abe843fe90d78b6b986526d45c40ed3a913a0",
-          "gameVersions": [
-            "1.26.52"
-          ],
-          "coreAbi": 1,
-          "dependencies": [],
-          "conflicts": [],
-          "publishedAt": "2026-10-19T03:33:12Z",
-          "notes": "시각 효과 0.1.0 첫 배포. 기능별 켜기/끄기와 세부 조정을 지원합니다."
         }
       ]
     },
@@ -275,128 +365,38 @@
           "coreAbi": 1,
           "dependencies": [],
           "conflicts": [],
-          "publishedAt": "2026-10-19T03:33:13Z",
+          "publishedAt": "2026-10-19T03:33:40Z",
           "notes": "서버 편의 0.1.0 첫 배포. 기능별 켜기/끄기와 세부 조정을 지원합니다."
         }
       ]
     },
     {
-      "id": "nel.map",
-      "name": "지도·이동",
-      "description": "지도·이동 세트: 미니맵(방향·청크 격자·웨이포인트·좌표, 지형은 아직 없음)과 웨이포인트(설정 목록, 단축키로 추가하는 임시 지점, 사망 지점). 기능마다 켜기/끄기와 세부 설정이 있고 게임 중 NEL 메뉴에서 바꾸면 바로 적용됩니다. 게임에서 읽기만 하고 서버로 무엇을 보내지 않습니다. 좌표를 보여 주므로 서버 규칙 확인. 게임 함수는 이 게임 빌드(1.26.52)의 코드 바이트가 정확히 맞을 때만 쓰고 아니면 그 기능을 건너뜁니다.",
-      "authors": [
-        "NEL client contributors"
-      ],
-      "category": "hud",
-      "license": "LicenseRef-NEL-Proprietary",
-      "terms": "licenses/nel.map.md",
-      "repository": "boredape874/nel-mods",
-      "releases": [
-        {
-          "version": "0.1.0",
-          "channel": "stable",
-          "tag": "map-v0.1.0",
-          "asset": "nel-map-0.1.0.nelmod",
-          "size": 1539930,
-          "sha256": "b717f3397fc272d5386e564ce90eb5d8f4342effbd47fa65850f41d3cce85149",
-          "gameVersions": [
-            "1.26.52"
-          ],
-          "coreAbi": 1,
-          "dependencies": [],
-          "conflicts": [],
-          "publishedAt": "2026-10-19T03:33:13Z",
-          "notes": "지도·이동 0.1.0 첫 배포. 기능별 켜기/끄기와 세부 조정을 지원합니다."
-        }
-      ]
-    },
-    {
-      "id": "nel.items",
-      "name": "아이템",
-      "description": "아이템 세트: 상자·인벤토리에서 아이템을 옮길 때 날아가는 아이템 그림(애니메이션)을 그리지 않습니다. 아이템이 옮겨지는 것은 그대로이고 그림만 생략합니다. 게임 중 NEL 메뉴에서 바꾸면 바로 적용됩니다. 서버로 무엇을 보내지 않습니다. Java식 버리기(JavaDrop)는 아직 넣지 않았습니다. 게임 함수는 이 게임 빌드(1.26.52)의 코드 바이트가 정확히 맞을 때만 쓰고 아니면 그 기능을 건너뜁니다.",
+      "id": "nel.visuals",
+      "name": "시각 효과",
+      "description": "시각 효과 세트: 모션 블러, 시간 고정, 안개 색, 날씨 숨기기, 블록 외곽선 색, 부수기 진행도, 청크 경계, 히트박스, 바라보는 대상 정보. 기능마다 켜기/끄기와 세부 설정이 있고 게임 중 NEL 메뉴에서 바꾸면 바로 적용됩니다. 이 PC의 화면에 그리는 것만 바꾸고 서버로 무엇을 보내지 않습니다. 히트박스와 바라보는 대상은 서버 규칙 확인. 게임 함수는 이 게임 빌드(1.26.52)의 코드 바이트가 정확히 맞을 때만 쓰고 아니면 그 기능을 건너뜁니다. 동적 조명과 불 화면 끄기는 아직 넣지 않았습니다.",
       "authors": [
         "NEL client contributors"
       ],
       "category": "utility",
       "license": "LicenseRef-NEL-Proprietary",
-      "terms": "licenses/nel.items.md",
+      "terms": "licenses/nel.visuals.md",
       "repository": "boredape874/nel-mods",
       "releases": [
         {
           "version": "0.1.0",
           "channel": "stable",
-          "tag": "items-v0.1.0",
-          "asset": "nel-items-0.1.0.nelmod",
-          "size": 148754,
-          "sha256": "edd719d2c444309bf333901baa3f2efcae469cebe53dbd1da482780d3a94d260",
+          "tag": "visuals-v0.1.0",
+          "asset": "nel-visuals-0.1.0.nelmod",
+          "size": 1548933,
+          "sha256": "72044f008a3168dea8ca05b4d08abe843fe90d78b6b986526d45c40ed3a913a0",
           "gameVersions": [
             "1.26.52"
           ],
           "coreAbi": 1,
           "dependencies": [],
           "conflicts": [],
-          "publishedAt": "2026-10-19T03:33:14Z",
-          "notes": "아이템 0.1.0 첫 배포. 기능별 켜기/끄기와 세부 조정을 지원합니다."
-        }
-      ]
-    },
-    {
-      "id": "nel.integrations",
-      "name": "외부 연동",
-      "description": "외부 연동 세트: Discord 상태 표시(이 PC의 Discord 앱, 직접 만든 애플리케이션 ID)와 이 PC에서만 보이는 닉네임. 기능마다 켜기/끄기와 세부 설정이 있고 게임 중 NEL 메뉴에서 바꾸면 바로 적용됩니다. 게임 서버로 무엇을 보내지 않습니다. 게임 함수는 이 게임 빌드(1.26.52)의 코드 바이트가 정확히 맞을 때만 쓰고 아니면 그 기능을 건너뜁니다.",
-      "authors": [
-        "NEL client contributors"
-      ],
-      "category": "utility",
-      "license": "LicenseRef-NEL-Proprietary",
-      "terms": "licenses/nel.integrations.md",
-      "repository": "boredape874/nel-mods",
-      "releases": [
-        {
-          "version": "0.1.0",
-          "channel": "stable",
-          "tag": "integrations-v0.1.0",
-          "asset": "nel-integrations-0.1.0.nelmod",
-          "size": 214861,
-          "sha256": "8e52a42480a073ac28abe4d8c0f32b9fb4b885a49897f6311e3cc492932e2081",
-          "gameVersions": [
-            "1.26.52"
-          ],
-          "coreAbi": 1,
-          "dependencies": [],
-          "conflicts": [],
-          "publishedAt": "2026-10-19T03:33:14Z",
-          "notes": "외부 연동 0.1.0 첫 배포. 기능별 켜기/끄기와 세부 조정을 지원합니다."
-        }
-      ]
-    },
-    {
-      "id": "nel.fun",
-      "name": "재미",
-      "description": "재미 세트: 게임 위에서 하는 블록 퍼즐(NEL 자체 구현). 단축키로 열고 닫습니다. 서버로 무엇을 보내지 않습니다. 화면 메시 뒤집기(FlipMesh)는 넣지 않았습니다. 게임 함수는 이 게임 빌드(1.26.52)의 코드 바이트가 정확히 맞을 때만 쓰고 아니면 그 기능을 건너뜁니다.",
-      "authors": [
-        "NEL client contributors"
-      ],
-      "category": "utility",
-      "license": "LicenseRef-NEL-Proprietary",
-      "terms": "licenses/nel.fun.md",
-      "repository": "boredape874/nel-mods",
-      "releases": [
-        {
-          "version": "0.1.0",
-          "channel": "stable",
-          "tag": "fun-v0.1.0",
-          "asset": "nel-fun-0.1.0.nelmod",
-          "size": 1502877,
-          "sha256": "e2845939c982dd76717355d2ffd756a774f841443d731c07101266a68f21f938",
-          "gameVersions": [
-            "1.26.52"
-          ],
-          "coreAbi": 1,
-          "dependencies": [],
-          "conflicts": [],
-          "publishedAt": "2026-10-19T03:33:14Z",
-          "notes": "재미 0.1.0 첫 배포. 기능별 켜기/끄기와 세부 조정을 지원합니다."
+          "publishedAt": "2026-10-19T03:33:37Z",
+          "notes": "시각 효과 0.1.0 첫 배포. 기능별 켜기/끄기와 세부 조정을 지원합니다."
         }
       ]
     }
