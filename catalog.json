@@ -3,7 +3,7 @@
   "schemaVersion": 1,
   "name": "NEL 공식 모드",
   "repository": "boredape874/nel-mods",
-  "updatedAt": "2026-10-19T13:58:29Z",
+  "updatedAt": "2026-10-20T08:44:23Z",
   "mods": [
     {
       "id": "nel.camera",
@@ -228,6 +228,38 @@
       "repository": "boredape874/nel-mods",
       "releases": [
         {
+          "version": "0.9.1",
+          "channel": "stable",
+          "tag": "optimization-v0.9.1",
+          "asset": "nel-optimization-0.9.1.nelmod",
+          "size": 340407,
+          "sha256": "4d79bf7e66aee3ec64866d343f7a40bd5d97639f932c03249f58d3bee021e7c6",
+          "gameVersions": [
+            "1.26.52"
+          ],
+          "coreAbi": 1,
+          "dependencies": [],
+          "conflicts": [],
+          "publishedAt": "2026-10-19T13:58:41Z",
+          "notes": "0.9.1: 모든 설정(76개)을 게임 중 NEL 메뉴에서 바꾸면 바로 적용됩니다. 프레임 제한·플레이 중/메뉴 FPS·프레임 지연·스레드·배터리 설정, 적응형 품질, 렌더 측정도 다시 시작할 필요가 없습니다. 게임 안에서는 아직 확인하지 않았습니다."
+        },
+        {
+          "version": "0.9.0",
+          "channel": "stable",
+          "tag": "optimization-v0.9.0",
+          "asset": "nel-optimization-0.9.0.nelmod",
+          "size": 337079,
+          "sha256": "d65448ef0cd4e95f4eb791acfdc219f527144048e428df568629774ba35b25af",
+          "gameVersions": [
+            "1.26.52"
+          ],
+          "coreAbi": 1,
+          "dependencies": [],
+          "conflicts": [],
+          "publishedAt": "2026-10-19T11:47:53Z",
+          "notes": "0.9.0: 같은 종류 엔티티는 가까운 몇 개만 그립니다. 게임 옵션(숨은 렌더 끄기, 파티클 표시 거리, 메뉴 파노라마, 비디오 설정)을 켜 있는 동안만 바꾸고 끄면 되돌립니다. 플레이 중·메뉴 FPS 제한과 렌더 측정(로그)을 추가했습니다. 새 기능은 모두 기본 꺼짐이며 단계(performance·max·ultra)에 포함됩니다. 게임 안에서는 아직 확인하지 않았습니다."
+        },
+        {
           "version": "0.8.2",
           "channel": "stable",
           "tag": "optimization-v0.8.2",
@@ -337,38 +369,6 @@
           "conflicts": [],
           "publishedAt": "2026-10-17T15:29:41Z",
           "notes": "첫 배포: Windows 성능 3개 옵션(CPU 스로틀링 끄기, GPU 우선순위 높이기, 프로세스 우선순위 높이기)."
-        },
-        {
-          "version": "0.9.0",
-          "channel": "stable",
-          "tag": "optimization-v0.9.0",
-          "asset": "nel-optimization-0.9.0.nelmod",
-          "size": 337079,
-          "sha256": "d65448ef0cd4e95f4eb791acfdc219f527144048e428df568629774ba35b25af",
-          "gameVersions": [
-            "1.26.52"
-          ],
-          "coreAbi": 1,
-          "dependencies": [],
-          "conflicts": [],
-          "publishedAt": "2026-10-19T11:47:45Z",
-          "notes": "0.9.0: 같은 종류 엔티티는 가까운 몇 개만 그립니다. 게임 옵션(숨은 렌더 끄기, 파티클 표시 거리, 메뉴 파노라마, 비디오 설정)을 켜 있는 동안만 바꾸고 끄면 되돌립니다. 플레이 중·메뉴 FPS 제한과 렌더 측정(로그)을 추가했습니다. 새 기능은 모두 기본 꺼짐이며 단계(performance·max·ultra)에 포함됩니다. 게임 안에서는 아직 확인하지 않았습니다."
-        },
-        {
-          "version": "0.9.1",
-          "channel": "stable",
-          "tag": "optimization-v0.9.1",
-          "asset": "nel-optimization-0.9.1.nelmod",
-          "size": 340407,
-          "sha256": "4d79bf7e66aee3ec64866d343f7a40bd5d97639f932c03249f58d3bee021e7c6",
-          "gameVersions": [
-            "1.26.52"
-          ],
-          "coreAbi": 1,
-          "dependencies": [],
-          "conflicts": [],
-          "publishedAt": "2026-10-19T13:58:29Z",
-          "notes": "0.9.1: 모든 설정(76개)을 게임 중 NEL 메뉴에서 바꾸면 바로 적용됩니다. 프레임 제한·플레이 중/메뉴 FPS·프레임 지연·스레드·배터리 설정, 적응형 품질, 렌더 측정도 다시 시작할 필요가 없습니다. 게임 안에서는 아직 확인하지 않았습니다."
         }
       ]
     },
